@@ -1,5 +1,5 @@
 ---
-- name: Install LLM Worker using Docker, setup NFS mount, and install NVIDIA Container Toolkit
+- name: Instal LLM Worker using Docker, setup NFS mount, and install NVIDIA Container Toolkit
   hosts: all
   become: true
   vars:
