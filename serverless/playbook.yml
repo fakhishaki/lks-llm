@@ -3,7 +3,7 @@
   hosts: all
   become: true
   vars:
-    efs_ip: "fs-05bdff716463aef7c.efs.ap-southeast-1.amazonaws.com"
+    efs_ip: "fs-0ff85665ce99d56be.efs.us-east-1.amazonaws.com"
     share_path: "/share"
     llm_data: "/share/llm"
     llm_tmp: "/share/tmp"
