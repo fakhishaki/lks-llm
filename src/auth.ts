@@ -10,7 +10,7 @@ const ID_TOKEN_EXPIRATION_MINUTES = parseInt(process.env.NEXT_PUBLIC_COGNITO_ID_
 const ID_TOKEN_EXPIRATION_SECONDS = ID_TOKEN_EXPIRATION_MINUTES * 60;
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
-   secret: process.env.NEXTAUTH_SECRET,
+   secret: process.env.NEXTAUTH_SECRET || process.env.AUTH_SECRET,
    providers: [
       Credentials({
          name: "cognito",
